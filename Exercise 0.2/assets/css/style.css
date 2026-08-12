@@ -97,3 +97,51 @@ footer {
 .faq-answer.show {
     display: block;
 }
+
+.tv-section {
+    margin-top: 40px;
+}
+
+.tv-section h2 {
+    color: #8b6f47;
+}
+
+.energy-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.energy-table th,
+.energy-table td {
+    border: 1px solid #d6b45c;
+    padding: 15px;
+    text-align: left;
+}
+
+.energy-table th {
+    background-color: #f6d77a;
+}
+
+.energy-table tbody tr {
+    background-color: #ffffff;
+}
+
+.energy-table tbody tr:hover {
+    background-color: #fff2c7;
+}
+
+.note {
+    margin-top: 15px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.about-section h2 {
+    margin-top: 30px;
+    color: #8b6f47;
+}
+
+.about-section ul {
+    line-height: 1.8;
+}
