@@ -83,3 +83,9 @@ if (energyForm) {
     hoursInput.addEventListener("input", calculateEnergy);
     priceInput.addEventListener("input", calculateEnergy);
 }
+
+const currentYear = document.getElementById("current-year");
+
+if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
+}
