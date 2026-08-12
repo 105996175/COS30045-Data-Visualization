@@ -145,3 +145,74 @@ footer {
 .about-section ul {
     line-height: 1.8;
 }
+
+.calculator-section {
+    margin-top: 50px;
+}
+
+.calculator-section h2 {
+    color: #8b6f47;
+}
+
+#energy-form {
+    margin-top: 20px;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #f6d77a;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    outline: 2px solid #f6d77a;
+}
+
+.calculate-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8b6f47;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.calculate-button:hover {
+    background-color: #6f5737;
+}
+
+.calculator-results {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff2c7;
+    border-radius: 8px;
+}
+
+.calculator-results h3 {
+    color: #8b6f47;
+    margin-top: 0;
+}
+
+#calculator-message {
+    margin-top: 15px;
+    font-weight: bold;
+}
