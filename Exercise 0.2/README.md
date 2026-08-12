@@ -62,3 +62,18 @@ energy-webpage-v1
 │
 ├── index.html
 └── README.md
+
+## Generative AI Acknowledgement
+
+Generative AI (ChatGPT) was used as a learning and development assistant during this exercise.
+
+It was used to assist with:
+- planning the HTML structure for the three-page website
+- CSS styling and layout suggestions
+- implementing the JavaScript FAQ accordion
+- implementing and explaining the appliance energy calculator
+- input validation and dynamic DOM updates
+- debugging and troubleshooting
+- explaining GitHub Desktop and the development workflow
+
+The generated suggestions were reviewed, tested, and adapted as part of the development process.
