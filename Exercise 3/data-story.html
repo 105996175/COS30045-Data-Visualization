@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TV Energy Data Story | Appliance Energy Consumption</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo-link">
+                <img src="assets/img/power-logo.png" alt="Power logo" class="logo">
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="televisions.html">Televisions</a>
+                <a href="data-story.html" class="active">Data Story</a>
+                <a href="about.html">About Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="data-story-page">
+
+        <section class="story-introduction">
+            <h1>TV Size and Energy Consumption</h1>
+
+            <p class="story-lead">
+                Televisions are available in many different sizes, but choosing a
+                larger screen may also affect yearly electricity consumption.
+                This data story investigates how frequently different TV sizes
+                appear and how screen size relates to labelled energy consumption.
+            </p>
+
+            <p>
+                <strong>Target audience:</strong>
+                Consumers who are planning to purchase a television and want to
+                compare screen size and energy efficiency.
+            </p>
+        </section>
+
+        <section class="storyboard-section">
+            <h2>Six-Stage Storyboard</h2>
+
+            <p>
+                The storyboard below shows how the website guides the reader from
+                the initial consumer concern to the evidence, findings and final
+                recommendation.
+            </p>
+
+            <figure class="visualisation-card">
+                <img src="assets/img/storyboard.png"
+                    alt="Six-stage storyboard explaining the TV energy consumption data story">
+                <figcaption>
+                    The six-stage storyline used to organise the TV energy
+                    consumption visualisations.
+                </figcaption>
+            </figure>
+        </section>
+
+        <section class="story-question">
+            <p class="question-label">Data Question 1</p>
+
+            <h2>How frequent is each size of TV?</h2>
+
+            <p>
+                Before considering energy consumption, it is useful to understand
+                the distribution of television sizes represented in the dataset.
+                The histogram shows how frequently the different screen-size
+                values occur.
+            </p>
+
+            <figure class="visualisation-card">
+                <img src="assets/img/tv-size-frequency.png"
+                    alt="Histogram showing the frequency distribution of television screen sizes">
+                <figcaption>
+                    Distribution of television screen sizes in the dataset.
+                </figcaption>
+            </figure>
+
+            <p class="finding">
+                <strong>Finding:</strong>
+                The dataset contains a wide range of television sizes, but TVs
+                appear most frequently within several middle size ranges. Very
+                small and very large televisions occur less frequently.
+            </p>
+        </section>
+
+        <section class="story-question">
+            <p class="question-label">Data Question 2</p>
+
+            <h2>How does screen size impact energy consumption?</h2>
+
+            <p>
+                The scatter plot compares television screen size in inches with
+                labelled yearly energy consumption in kilowatt-hours per year.
+                Each point represents a television in the dataset.
+            </p>
+
+            <figure class="visualisation-card">
+                <img src="assets/img/screen-size-energy.png"
+                    alt="Scatter plot showing television screen size and labelled yearly energy consumption">
+                <figcaption>
+                    Relationship between screen size and labelled yearly energy
+                    consumption.
+                </figcaption>
+            </figure>
+
+            <p class="finding">
+                <strong>Finding:</strong>
+                The scatter plot shows a clear positive relationship. Larger
+                televisions generally consume more energy per year. However,
+                televisions of similar sizes still show different consumption
+                levels, indicating that screen size is important but is not the
+                only factor affecting energy use.
+            </p>
+        </section>
+
+        <section class="story-conclusion">
+            <h2>What Does This Mean for Consumers?</h2>
+
+            <p>
+                Consumers should first choose a television size that suits their
+                needs and then compare the labelled yearly energy consumption of
+                similar-sized models. Choosing an unnecessarily large television
+                may result in higher electricity consumption.
+            </p>
+        </section>
+
+    </main>
+
+
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Lai Man Yee</p>
+        <p>Generative AI was used to assist with the development of this website.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
