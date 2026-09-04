@@ -77,3 +77,9 @@ It was used to assist with:
 - explaining GitHub Desktop and the development workflow
 
 The generated suggestions were reviewed, tested, and adapted as part of the development process.
+
+## Live Website
+
+The completed Exercise 0.2 website is available on Mercury:
+
+[View the Exercise 0.2 Website](https://mercury.swin.edu.au/cos30045/s105996175/exercise0.2/)
