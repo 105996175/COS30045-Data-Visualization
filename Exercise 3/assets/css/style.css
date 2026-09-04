@@ -303,3 +303,21 @@ footer {
         padding: 20px;
     }
 }
+
+.storyboard-caption {
+    margin-top: 12px;
+    color: #5e6d78;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.storyboard-section img {
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    margin: 25px auto 0;
+    border: 1px solid #d9e1e5;
+    border-radius: 10px;
+    cursor: zoom-in;
+}
