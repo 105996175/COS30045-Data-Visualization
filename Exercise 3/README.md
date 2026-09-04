@@ -59,3 +59,9 @@ the exercise requirements, planning the six-stage storyboard, structuring
 the data-story webpage, generating example HTML and CSS, and reviewing
 the written explanations. The KNIME data processing and visualisation
 outputs were completed and verified by the student.
+
+## Live Website
+
+The completed Exercise 3 website is available on Mercury:
+
+[View the Exercise 3 Data Story Website](https://mercury.swin.edu.au/cos30045/s105996175/exercise3/)
