@@ -46,3 +46,7 @@ Generative AI (ChatGPT) was used to assist with planning the SVG drawing, sugges
 
 - Dufour, A. M. & Meeks, E. (2024). *D3.js in Action* (3rd Edition). Manning Publications.
 - Mozilla Developer Network. SVG documentation and tutorials.
+
+## Live Website
+
+[View Exercise 4.1 on Mercury](https://mercury.swin.edu.au/cos30045/s105996175/exercise4/exercise4.1/exercise4-1.html)
