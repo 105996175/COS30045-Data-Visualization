@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Appliance Energy Consumption</title>
+    <title>Exercise 4.1 - Draw SVGs</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -49,16 +49,16 @@
                     <rect x="0" y="400" width="900" height="200" fill="lightgreen" />
 
                     <!-- Sun - circle -->
-                    <circle cx="760" cy="100" r="55" fill="gold" stroke="orange" stroke-width="4" />
+                    <circle cx="700" cy="130" r="55" fill="orange" stroke="darkorange" stroke-width="4" />
 
                     <!-- House body - rectangle -->
-                    <rect x="300" y="260" width="300" height="220" fill="#c96f32" stroke="#6b3518" stroke-width="4" />
+                    <rect x="320" y="270" width="300" height="220" fill="#d98c3f" stroke="#6b3518" stroke-width="4" />
 
                     <!-- Roof - path -->
                     <path d="M260 260 L450 120 L640 260 Z" fill="#8b4513" stroke="#5c2d0c" stroke-width="4" />
 
                     <!-- Two windows grouped together -->
-                    <g fill="lightblue" stroke="navy" stroke-width="4" transform="translate(325, 300)">
+                    <g fill="lightblue" stroke="navy" stroke-width="4" transform="translate(345, 310)">
 
                         <rect x="0" y="0" width="70" height="70" />
 
@@ -76,25 +76,26 @@
                     <rect x="125" y="320" width="35" height="160" fill="saddlebrown" />
 
                     <!-- Tree leaves - ellipses -->
-                    <ellipse cx="140" cy="290" rx="75" ry="60" fill="forestgreen" />
+                    <ellipse cx="120" cy="275" rx="75" ry="60" fill="forestgreen" />
 
                     <ellipse cx="100" cy="310" rx="55" ry="50" fill="green" />
 
                     <ellipse cx="180" cy="310" rx="55" ry="50" fill="green" />
 
                     <!-- Garden path -->
-                    <path d="M450 480 C420 510, 350 530, 320 600" fill="none" stroke="#d8b26e" stroke-width="45" />
+                    <path d="M565 600 C540 570, 500 550, 470 520" fill="none" stroke="#d9b66f" stroke-width="35"
+                        stroke-linecap="round" />
 
                     <!-- Fence - lines -->
-                    <line x1="670" y1="390" x2="670" y2="480" stroke="white" stroke-width="8" />
+                    <line x1="670" y1="390" x2="670" y2="485" stroke="white" stroke-width="5" />
 
-                    <line x1="720" y1="390" x2="720" y2="480" stroke="white" stroke-width="8" />
+                    <line x1="720" y1="390" x2="720" y2="485" stroke="white" stroke-width="5" />
 
-                    <line x1="770" y1="390" x2="770" y2="480" stroke="white" stroke-width="8" />
+                    <line x1="770" y1="390" x2="770" y2="485" stroke="white" stroke-width="5" />
 
-                    <line x1="640" y1="420" x2="800" y2="420" stroke="white" stroke-width="8" />
+                    <line x1="640" y1="420" x2="800" y2="420" stroke="white" stroke-width="5" />
 
-                    <line x1="640" y1="455" x2="800" y2="455" stroke="white" stroke-width="8" />
+                    <line x1="640" y1="455" x2="800" y2="455" stroke="white" stroke-width="5" />
 
                     <!-- Text -->
                     <text x="450" y="75" text-anchor="middle" font-family="Arial" font-size="32" fill="#333">
@@ -105,6 +106,108 @@
 
             </div>
         </section>
+
+        <section class="comparison">
+            <h2>Before and After Customisation</h2>
+
+            <div class="comparison-images">
+
+                <div class="comparison-item">
+                    <h3>Before</h3>
+                    <img src="assets/img/house-before.png" alt="SVG house before customisation">
+                </div>
+
+                <div class="comparison-item">
+                    <h3>After</h3>
+                    <img src="assets/img/house-after.png" alt="SVG house after customisation">
+                </div>
+
+            </div>
+
+            <h2>
+                <h2>SVG Coordinates and Changes</h2>
+            </h2>
+
+            <table class="changes-table">
+                <thead>
+                    <tr>
+                        <th>Element</th>
+                        <th>Before</th>
+                        <th>After</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Text position</td>
+                        <td>x = 450, y = 75</td>
+                        <td>x = 450, y = 75</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sun position</td>
+                        <td>cx = 760, cy = 100</td>
+                        <td>cx = 700, cy = 130</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sun colour</td>
+                        <td>fill = gold, stroke = orange</td>
+                        <td>fill = orange, stroke = darkorange</td>
+                    </tr>
+
+                    <tr>
+                        <td>House body position</td>
+                        <td>x = 300, y = 260</td>
+                        <td>x = 320, y = 270</td>
+                    </tr>
+
+                    <tr>
+                        <td>House body colour</td>
+                        <td>fill = #c96f32</td>
+                        <td>fill = #d98c3f</td>
+                    </tr>
+
+                    <tr>
+                        <td>Windows group position</td>
+                        <td>translate(325, 300)</td>
+                        <td>translate(345, 310)</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tree top ellipse position</td>
+                        <td>cx = 140, cy = 290</td>
+                        <td>cx = 120, cy = 275</td>
+                    </tr>
+
+                    <tr>
+                        <td>Garden path</td>
+                        <td>
+                            d = M450 480 C420 510, 350 530, 320 600<br>
+                            stroke-width = 45
+                        </td>
+                        <td>
+                            d = M565 600 C540 570, 500 550, 470 520<br>
+                            stroke-width = 35
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Fence vertical lines</td>
+                        <td>y2 = 480, stroke-width = 8</td>
+                        <td>y2 = 485, stroke-width = 5</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fence horizontal lines</td>
+                        <td>stroke-width = 8</td>
+                        <td>stroke-width = 5</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
     </main>
 
     <footer>
