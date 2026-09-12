@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Appliance Energy Consumption</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo-link">
+                <img src="assets/img/power-logo.png" alt="Power logo" class="logo">
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="televisions.html">Televisions</a>
+                <a href="about.html">About Us</a>
+                <a href="exercise4-1.html" class="active">Exercise 4.1</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="svg-exercise">
+            <h1>Exercise 4.1: Draw SVGs</h1>
+
+            <p>
+                This exercise demonstrates SVG shapes, paths, text,
+                styling, grouping and transformations.
+            </p>
+
+            <h2>SVG House and Garden</h2>
+
+            <div class="svg-container">
+
+                <svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+
+                    <!-- Sky -->
+                    <rect x="0" y="0" width="900" height="400" fill="skyblue" />
+
+                    <!-- Grass -->
+                    <rect x="0" y="400" width="900" height="200" fill="lightgreen" />
+
+                    <!-- Sun - circle -->
+                    <circle cx="760" cy="100" r="55" fill="gold" stroke="orange" stroke-width="4" />
+
+                    <!-- House body - rectangle -->
+                    <rect x="300" y="260" width="300" height="220" fill="#c96f32" stroke="#6b3518" stroke-width="4" />
+
+                    <!-- Roof - path -->
+                    <path d="M260 260 L450 120 L640 260 Z" fill="#8b4513" stroke="#5c2d0c" stroke-width="4" />
+
+                    <!-- Two windows grouped together -->
+                    <g fill="lightblue" stroke="navy" stroke-width="4" transform="translate(325, 300)">
+
+                        <rect x="0" y="0" width="70" height="70" />
+
+                        <rect x="180" y="0" width="70" height="70" />
+
+                    </g>
+
+                    <!-- Door -->
+                    <rect x="415" y="375" width="70" height="105" fill="#7b3f00" stroke="#4b2600" stroke-width="3" />
+
+                    <!-- Door handle - circle -->
+                    <circle cx="470" cy="430" r="6" fill="gold" />
+
+                    <!-- Tree trunk -->
+                    <rect x="125" y="320" width="35" height="160" fill="saddlebrown" />
+
+                    <!-- Tree leaves - ellipses -->
+                    <ellipse cx="140" cy="290" rx="75" ry="60" fill="forestgreen" />
+
+                    <ellipse cx="100" cy="310" rx="55" ry="50" fill="green" />
+
+                    <ellipse cx="180" cy="310" rx="55" ry="50" fill="green" />
+
+                    <!-- Garden path -->
+                    <path d="M450 480 C420 510, 350 530, 320 600" fill="none" stroke="#d8b26e" stroke-width="45" />
+
+                    <!-- Fence - lines -->
+                    <line x1="670" y1="390" x2="670" y2="480" stroke="white" stroke-width="8" />
+
+                    <line x1="720" y1="390" x2="720" y2="480" stroke="white" stroke-width="8" />
+
+                    <line x1="770" y1="390" x2="770" y2="480" stroke="white" stroke-width="8" />
+
+                    <line x1="640" y1="420" x2="800" y2="420" stroke="white" stroke-width="8" />
+
+                    <line x1="640" y1="455" x2="800" y2="455" stroke="white" stroke-width="8" />
+
+                    <!-- Text -->
+                    <text x="450" y="75" text-anchor="middle" font-family="Arial" font-size="32" fill="#333">
+                        My SVG House
+                    </text>
+
+                </svg>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Lai Man Yee</p>
+        <p>Generative AI was used to assist with the development of this website.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

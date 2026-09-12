@@ -216,3 +216,33 @@ footer {
     margin-top: 15px;
     font-weight: bold;
 }
+
+/* Exercise 4.1 */
+
+.svg-exercise {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.svg-exercise h1,
+.svg-exercise h2 {
+    text-align: center;
+}
+
+.svg-exercise p {
+    text-align: center;
+}
+
+.svg-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.svg-container svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 2px solid #333;
+}
