@@ -302,3 +302,18 @@ footer {
         flex-direction: column;
     }
 }
+
+.coordinate-example {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.coordinate-example img {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 20px auto;
+    border: 1px solid #333;
+}
