@@ -217,20 +217,9 @@ footer {
     font-weight: bold;
 }
 
-/* Exercise 4.2 */
-
-.d3-exercise {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
-.d3-container {
-    margin: 20px 0;
-}
-
-.d3-svg {
-    display: block;
-    margin: 20px 0;
-    border: 1px solid #333;
+.responsive-svg-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1200px;
 }
