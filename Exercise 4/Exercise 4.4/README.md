@@ -108,3 +108,7 @@ The suggested steps and code were reviewed and tested before being included in t
 
 - Dufour, A. M. & Meeks, E. (2024). *D3.js in Action*.
 - COS30045 Week 4 lecture materials.
+
+## Live Website
+
+[View Exercise 4.4 on Mercury](https://mercury.swin.edu.au/cos30045/s105996175/exercise4/exercise4.4/)
