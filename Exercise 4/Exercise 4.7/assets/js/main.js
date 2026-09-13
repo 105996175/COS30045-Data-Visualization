@@ -22,6 +22,7 @@ const drawBarChart = data => {
         .attr("transform", d => `translate(0, ${yScale(d.brand)})`);
 
     barAndLabel
+        .append("rect")
         .attr("width", d => xScale(d.count))
         .attr("height", yScale.bandwidth())
         .attr("fill", "blue")
