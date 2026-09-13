@@ -75,3 +75,8 @@ Generative AI (ChatGPT) was used to assist with understanding the exercise instr
 
 - Dufour, A. M. & Meeks, E. (2024). *D3.js in Action*.
 - COS30045 Week 4 lecture materials.
+
+## Live Website
+
+[View Exercise 4.3 on Mercury](https://mercury.swin.edu.au/cos30045/s105996175/exercise4/exercise4.3/)
+
