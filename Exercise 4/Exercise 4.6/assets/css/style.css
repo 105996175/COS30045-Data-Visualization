@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffaf0;
+    color: #333333;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f6d77a;
+    padding: 10px 40px;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background-color: #e6b94f;
+}
+
+.nav-links a.active {
+    background-color: #8b6f47;
+    color: white;
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #8b6f47;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f6d77a;
+    margin-top: 40px;
+}
+
+.faq {
+    margin-top: 40px;
+}
+
+.faq h2 {
+    color: #8b6f47;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    border: none;
+    background-color: #f6d77a;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.faq-question:hover {
+    background-color: #e6b94f;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #f6d77a;
+    border-radius: 0 0 5px 5px;
+}
+
+.faq-answer.show {
+    display: block;
+}
+
+.tv-section {
+    margin-top: 40px;
+}
+
+.tv-section h2 {
+    color: #8b6f47;
+}
+
+.energy-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.energy-table th,
+.energy-table td {
+    border: 1px solid #d6b45c;
+    padding: 15px;
+    text-align: left;
+}
+
+.energy-table th {
+    background-color: #f6d77a;
+}
+
+.energy-table tbody tr {
+    background-color: #ffffff;
+}
+
+.energy-table tbody tr:hover {
+    background-color: #fff2c7;
+}
+
+.note {
+    margin-top: 15px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.about-section h2 {
+    margin-top: 30px;
+    color: #8b6f47;
+}
+
+.about-section ul {
+    line-height: 1.8;
+}
+
+.calculator-section {
+    margin-top: 50px;
+}
+
+.calculator-section h2 {
+    color: #8b6f47;
+}
+
+#energy-form {
+    margin-top: 20px;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #f6d77a;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    outline: 2px solid #f6d77a;
+}
+
+.calculate-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8b6f47;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.calculate-button:hover {
+    background-color: #6f5737;
+}
+
+.calculator-results {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff2c7;
+    border-radius: 8px;
+}
+
+.calculator-results h3 {
+    color: #8b6f47;
+    margin-top: 0;
+}
+
+#calculator-message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.responsive-svg-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1200px;
+}
