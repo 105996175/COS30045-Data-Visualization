@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Televisions | Appliance Energy Consumption</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo-link">
+                <img src="assets/img/power-logo.png" alt="Power logo" class="logo">
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="televisions.html" class="active">Televisions</a>
+                <a href="about.html">About Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Television Energy Consumption</h1>
+
+            <p>
+                Televisions use different amounts of electricity depending on
+                their size, display technology, power rating and how many hours
+                they are used each day.
+            </p>
+
+            <p>
+                Understanding television energy consumption can help households
+                compare different models and make more energy-efficient choices.
+            </p>
+        </section>
+
+        <section class="tv-section">
+            <h2>Example Television Energy Usage</h2>
+
+            <table class="energy-table">
+                <thead>
+                    <tr>
+                        <th>Television Type</th>
+                        <th>Example Power Usage</th>
+                        <th>Usage per Day</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>32-inch LED TV</td>
+                        <td>50 W</td>
+                        <td>4 hours</td>
+                    </tr>
+
+                    <tr>
+                        <td>50-inch LED TV</td>
+                        <td>100 W</td>
+                        <td>4 hours</td>
+                    </tr>
+
+                    <tr>
+                        <td>65-inch LED TV</td>
+                        <td>150 W</td>
+                        <td>4 hours</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="note">
+                Note: These values are example data for demonstration purposes.
+                Actual energy consumption varies between television models.
+            </p>
+        </section>
+
+        <section class="calculator-section">
+            <h2>Appliance Energy Calculator</h2>
+
+            <p>
+                Enter the appliance power usage, average daily usage and electricity
+                price to estimate its energy consumption and cost.
+            </p>
+
+            <form id="energy-form">
+                <div class="form-group">
+                    <label for="power">Appliance Power Usage (Watts)</label>
+                    <input type="number" id="power" min="0" step="any">
+                </div>
+
+                <div class="form-group">
+                    <label for="hours">Average Hours of Use per Day</label>
+                    <input type="number" id="hours" min="0" max="24" step="any">
+                </div>
+
+                <div class="form-group">
+                    <label for="price">Electricity Price (cents per kWh)</label>
+                    <input type="number" id="price" min="0" step="any">
+                </div>
+
+                <button type="submit" class="calculate-button">
+                    Calculate
+                </button>
+            </form>
+
+            <div id="calculator-message"></div>
+
+            <div id="calculator-results" class="calculator-results">
+                <h3>Estimated Results</h3>
+
+                <p>
+                    Daily Energy Consumption:
+                    <strong id="daily-energy">-</strong>
+                </p>
+
+                <p>
+                    Monthly Energy Consumption:
+                    <strong id="monthly-energy">-</strong>
+                </p>
+
+                <p>
+                    Yearly Energy Consumption:
+                    <strong id="yearly-energy">-</strong>
+                </p>
+
+                <p>
+                    Estimated Monthly Cost:
+                    <strong id="monthly-cost">-</strong>
+                </p>
+
+                <p>
+                    Estimated Yearly Cost:
+                    <strong id="yearly-cost">-</strong>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Lai Man Yee</p>
+        <p>Generative AI was used to assist with the development of this website.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
