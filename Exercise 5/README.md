@@ -1,165 +1,83 @@
-# Exercise 4.7: Adding Labels
+# Exercise 5 – Multi-Chart Webpage
 
 ## Overview
 
-This exercise extends the D3 bar chart created in Exercise 4.6 by adding labels for each TV brand and displaying the count value at the end of each bar.
+This exercise uses D3.js to create multiple chart types on the same webpage.
 
-The bars and labels are grouped together using SVG `<g>` elements so they can be positioned and transformed as one unit.
+The charts were created using different datasets and demonstrate how D3 can be used to visualise categorical and continuous data.
 
-## What I Did
+## Exercise 5.1 – Vertical Bar Chart
 
-- Continued from the completed Exercise 4.6 bar chart.
-- Created space on the left side of the chart for brand labels.
-- Replaced the previous rectangle-only selection with SVG `<g>` groups.
-- Bound the TV brand data to the groups.
-- Used `transform` and `translate()` to position each group according to the band scale.
-- Added the blue bar rectangles back inside each group.
-- Added the TV brand name as a text label.
-- Right-aligned the brand labels using `text-anchor="end"`.
-- Added the count value after the end of each bar.
-- Adjusted the x-scale range so the bars and count labels fit inside the SVG.
-- Kept the data sorted from highest to lowest count.
+A vertical bar chart was created to compare the average energy consumption of different screen technologies for 55-inch televisions.
 
-## Grouping Bars and Labels
+The chart includes:
 
-A group is created for each TV brand so the bar and its labels move together:
+- X and Y axes
+- Screen technology categories
+- Energy consumption values
+- Labels above each bar
+- Responsive SVG layout
 
-```javascript
-const barAndLabel = svg
-    .selectAll("g")
-    .data(data)
-    .join("g")
-    .attr("transform", d => `translate(0, ${yScale(d.brand)})`);
-```
+The data is sorted from highest to lowest energy consumption.
 
-The group is positioned vertically using the band scale.
+## Exercise 5.2 – Scatter Plot and Line Chart
 
-## Adding the Bars
+A scatter plot and line chart were created using Australian electricity spot price data from 1998 to 2024.
 
-The rectangles are added inside each group:
+The chart includes:
 
-```javascript
-barAndLabel
-    .append("rect")
-    .attr("width", d => xScale(d.count))
-    .attr("height", yScale.bandwidth())
-    .attr("fill", "blue")
-    .attr("x", 100)
-    .attr("y", 0);
-```
+- Year on the X-axis
+- Average electricity spot price on the Y-axis
+- Scatter plot points
+- A line connecting the data points
+- Scaled X and Y axes
 
-The bars begin at `x = 100` to leave space for the brand labels.
+This exercise demonstrates how continuous data can be displayed using D3 line generators and linear scales.
 
-The rectangle y-position is set to `0` because the group itself is already positioned using `translate()`.
+## Exercise 5.3 – Donut Chart
 
-## Adding Brand Labels
+A donut chart was created to show the proportion of television models in three screen-size categories:
 
-The TV brand names are added using SVG text elements:
+- Large
+- Medium
+- Small
 
-```javascript
-barAndLabel
-    .append("text")
-    .text(d => d.brand)
-    .attr("x", 90)
-    .attr("y", 15)
-    .attr("text-anchor", "end")
-    .style("font-size", "13px");
-```
+The chart uses:
 
-The `text-anchor="end"` attribute right-aligns the brand names next to the bars.
+- `d3.pie()` to calculate slice angles
+- `d3.arc()` to draw the donut segments
+- `d3.scaleOrdinal()` for the colour scale
+- Labels positioned inside each segment
 
-## Adding Count Labels
+## Technologies Used
 
-The count value is displayed after each bar:
+- HTML
+- CSS
+- JavaScript
+- D3.js
 
-```javascript
-barAndLabel
-    .append("text")
-    .text(d => d.count)
-    .attr("x", d => 100 + xScale(d.count) + 4)
-    .attr("y", 12)
-    .style("font-size", "13px");
-```
+## Data Files
 
-The x-position is calculated using the starting position of the bar, its scaled width, and a small gap.
+The following datasets were used:
 
-## Bar Chart Function
-
-The completed bar chart function is:
-
-```javascript
-const drawBarChart = data => {
-
-    const xScale = d3.scaleLinear()
-        .domain([0, 1100])
-        .range([0, 350]);
-
-    const yScale = d3.scaleBand()
-        .domain(data.map(d => d.brand))
-        .range([0, 500])
-        .padding(0.1);
-
-    const barAndLabel = svg
-        .selectAll("g")
-        .data(data)
-        .join("g")
-        .attr("transform", d => `translate(0, ${yScale(d.brand)})`);
-
-    barAndLabel
-        .append("rect")
-        .attr("width", d => xScale(d.count))
-        .attr("height", yScale.bandwidth())
-        .attr("fill", "blue")
-        .attr("x", 100)
-        .attr("y", 0);
-
-    barAndLabel
-        .append("text")
-        .text(d => d.brand)
-        .attr("x", 90)
-        .attr("y", 15)
-        .attr("text-anchor", "end")
-        .style("font-size", "13px");
-
-    barAndLabel
-        .append("text")
-        .text(d => d.count)
-        .attr("x", d => 100 + xScale(d.count) + 4)
-        .attr("y", 12)
-        .style("font-size", "13px");
-};
-```
-
-## Result
-
-The final visualisation is a horizontal bar chart showing:
-
-- the TV brand name on the left;
-- a horizontal blue bar for each brand;
-- the exact count value at the end of each bar;
-- brands sorted from the highest count to the lowest count.
-
-The grouping of the bar and labels ensures that all elements remain aligned with the corresponding data item.
+- `Data_exercise 5.1-1.csv`
+- `ARE_Spot_Prices.csv`
+- `Data_exercise 5.3.csv`
 
 ## Files
 
-- `index.html` - Energy Consumption webpage containing the responsive SVG container.
-- `assets/css/style.css` - Website and chart styling.
-- `assets/js/main.js` - D3 code for loading data and creating the labelled bar chart.
-- `assets/js/script.js` - Existing JavaScript used by the Energy Consumption website.
-- `data/tvBrandCount.csv` - Processed TV brand count dataset.
+The charts are separated into individual JavaScript files:
 
-## Generative AI Use
+- `bar-chart.js`
+- `line-chart.js`
+- `donut-chart.js`
 
-Generative AI (ChatGPT) was used to assist with understanding the Exercise 4.7 instructions, explaining SVG grouping, positioning the labels, troubleshooting label clipping, and checking the final chart against the example demonstrated in class.
+All charts are displayed on the same `index.html` webpage.
 
-The suggested code and explanations were reviewed and tested before being included in the final work.
+## Author
 
-## References
-
-- Dufour, A. M. & Meeks, E. (2024). *D3.js in Action*.
-- COS30045 Week 4 lecture materials.
+Lai Man Yee
 
 ## Live Website
 
-[View Exercise 4.7 on Mercury](https://mercury.swin.edu.au/cos30045/s105996175/exercise4/exercise4.7/)
+[View Exercise 5 on Mercury](https://mercury.swin.edu.au/cos30045/s105996175/exercise5/)
