@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Charts | Appliance Energy Consumption</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/visualisation.css">
+
+<body>
+    </head>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo-link">
+                <img src="assets/img/power-logo.png" alt="Power logo" class="logo">
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="televisions.html">Televisions</a>
+                <a href="charts.html" class="active">Charts</a>
+                <a href="about.html">About Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="charts-section">
+
+            <h1>Exercise 6 – Interactive Visualisations</h1>
+
+            <p>
+                Explore the interactive visualisations created for Exercise 6.
+            </p>
+
+
+            <!-- Exercise 6.1 -->
+            <section class="exercise-section">
+
+                <h2>Exercise 6.1 – Interactive Histogram: Filtering</h2>
+
+                <h3>Energy Consumption for different TV screen types and sizes</h3>
+
+                <p>
+                    TVs vary considerably in energy consumption.
+                </p>
+
+                <div id="filters"></div>
+
+                <div id="histogram"></div>
+                <div class="data-source">
+                    <h3>Data source</h3>
+                    <p>Energy Rating Data for household appliances – Televisions</p>
+                    <p>Downloaded Jan 2026</p>
+                </div>
+
+            </section>
+
+
+            <!-- Exercise 6.2 -->
+            <section class="exercise-section">
+
+                <h2>Exercise 6.2 – Interactive Scatterplot: Tooltips</h2>
+
+                <p>
+                    Explore the relationship between energy consumption,
+                    star rating, screen size and screen technology.
+                </p>
+
+                <div id="scatterplot"></div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Lai Man Yee</p>
+        <p>Generative AI was used to assist with the development of this website.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="assets/js/load-data.js"></script>
+    <script src="assets/js/shared-constants.js"></script>
+    <script src="assets/js/interactions.js"></script>
+    <script src="assets/js/histogram.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
