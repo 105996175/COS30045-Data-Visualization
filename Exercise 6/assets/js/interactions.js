@@ -1,8 +1,8 @@
 const populateFilters = (data) => {
 
-    d3.select("#filters")
+    d3.select("#filters_screen")
         .selectAll(".filter")
-        .data(filters)
+        .data(filters_screen)
         .join("button")
         .attr("class", d => `filter ${d.isActive ? "active" : ""}`)
         .text(d => d.label)
@@ -11,12 +11,12 @@ const populateFilters = (data) => {
             if (!d.isActive) {
 
                 // Update the isActive state for all filters
-                filters.forEach(filter => {
+                filters_screen.forEach(filter => {
                     filter.isActive = d.id === filter.id;
                 });
 
                 // Update the filter buttons' active class
-                d3.selectAll("#filters .filter")
+                d3.selectAll("#filters_screen .filter")
                     .classed("active", filter => filter.isActive);
 
                 // Update the histogram
